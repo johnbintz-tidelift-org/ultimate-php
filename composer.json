@@ -1,0 +1,7 @@
+{
+  "require": {
+    "monolog/monolog": "1.0.*",
+    "cakephp/cakephp": "3.6.13",
+    "typo3/phar-stream-wrapper": "3.0.0"
+  }
+}
