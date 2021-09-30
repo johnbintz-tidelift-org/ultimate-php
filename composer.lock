@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d14412bd3913dcadf1a06255e2378818",
+    "content-hash": "d839ca02529365d728b2956bc14479df",
     "packages": [
         {
             "name": "aura/intl",
@@ -337,29 +337,31 @@
         },
         {
             "name": "typo3/phar-stream-wrapper",
-            "version": "v3.0.0",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/phar-stream-wrapper.git",
-                "reference": "072007eb3d2c8864aa7535fe5bd0349b5ba765f6"
+                "reference": "fff6f5e037882f816cd41a9f5ccd8d8f97bfdebf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/phar-stream-wrapper/zipball/072007eb3d2c8864aa7535fe5bd0349b5ba765f6",
-                "reference": "072007eb3d2c8864aa7535fe5bd0349b5ba765f6",
+                "url": "https://api.github.com/repos/TYPO3/phar-stream-wrapper/zipball/fff6f5e037882f816cd41a9f5ccd8d8f97bfdebf",
+                "reference": "fff6f5e037882f816cd41a9f5ccd8d8f97bfdebf",
                 "shasum": ""
             },
             "require": {
+                "ext-fileinfo": "*",
+                "ext-json": "*",
                 "php": "^7.0"
             },
             "require-dev": {
+                "ext-xdebug": "*",
                 "phpunit/phpunit": "^6.5"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "TYPO3\\PharStreamWrapper\\": "src/",
-                    "TYPO3\\PharStreamWrapper\\Tests\\": "tests/"
+                    "TYPO3\\PharStreamWrapper\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -368,7 +370,17 @@
             ],
             "description": "Interceptors for PHP's native phar:// stream handling",
             "homepage": "https://typo3.org/",
-            "time": "2018-09-07T15:16:01+00:00"
+            "keywords": [
+                "phar",
+                "php",
+                "security",
+                "stream-wrapper"
+            ],
+            "support": {
+                "issues": "https://github.com/TYPO3/phar-stream-wrapper/issues",
+                "source": "https://github.com/TYPO3/phar-stream-wrapper/tree/master"
+            },
+            "time": "2019-05-05T17:30:25+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",
@@ -440,5 +452,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
 }
